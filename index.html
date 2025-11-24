@@ -3,48 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikinai Media | Digital Marketing Agency in Kenya</title>
-    <meta name="description" content="Ikinai Media - Full-service digital marketing agency in Kenya offering web development, branding, SEO, and digital marketing solutions.">
-    <meta name="keywords" content="digital marketing Kenya, web development Nairobi, branding agency Kenya, SEO services Kenya">
+    <title>Ikinai Media | Digital Marketing Agency - Web Development, Branding & Marketing</title>
+    <meta name="description" content="Ikinai Media is a full-service digital marketing agency offering web development, branding, digital marketing, and e-commerce solutions. Transform your digital presence today.">
+    <meta name="keywords" content="digital marketing, web development, branding, e-commerce, SEO, content creation, Kenya, Nairobi">
     <meta name="author" content="Ikinai Media">
     
-    <!-- Open Graph Tags -->
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ikinaimedia.com">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Ikinai Media | Digital Marketing Agency">
-    <meta property="og:description" content="Elevate your digital presence with Ikinai Media's innovative digital marketing solutions in Kenya.">
+    <meta property="og:description" content="Full-service digital marketing agency offering web development, branding, and marketing solutions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ikinaimedia.com">
-    <meta property="og:image" content="https://ikinaimedia.com/og-image.jpg">
+    <meta property="og:image" content="https://ikinaimedia.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Ikinai Media">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ikinai Media | Digital Marketing Agency">
+    <meta name="twitter:description" content="Full-service digital marketing agency offering web development, branding, and marketing solutions.">
+    <meta name="twitter:image" content="https://ikinaimedia.com/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Ikinai Media",
-      "url": "https://ikinaimedia.com",
-      "logo": "https://ikinaimedia.com/logo.png",
-      "description": "Full-service digital marketing agency in Kenya",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "KE"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+254-704-107373",
-        "contactType": "customer service",
-        "email": "ikinaimedia2@gmail.com",
-        "areaServed": "KE"
-      },
-      "sameAs": [
-        "https://facebook.com/ikinaimedia",
-        "https://instagram.com/ikinaimedia",
-        "https://linkedin.com/company/ikinaimedia"
-      ]
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Ikinai Media",
+        "url": "https://ikinaimedia.com",
+        "logo": "https://ikinaimedia.com/images/logo.png",
+        "description": "Full-service digital marketing agency specializing in web development, branding, and digital marketing solutions.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Kenya",
+            "addressLocality": "Nairobi"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254-704-107373",
+            "contactType": "customer service",
+            "email": "ikinaimedia2@gmail.com",
+            "areaServed": "KE",
+            "availableLanguage": ["English", "Swahili"]
+        },
+        "sameAs": [
+            "https://www.facebook.com/ikinaimedia",
+            "https://www.instagram.com/ikinaimedia",
+            "https://www.linkedin.com/company/ikinaimedia",
+            "https://twitter.com/ikinaimedia"
+        ]
     }
     </script>
     
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         /* Reset and Base Styles */
         * {
@@ -55,15 +82,27 @@
         }
 
         :root {
-            --primary: #1a1a2e;
-            --secondary: #e94560;
-            --accent: #0f3460;
-            --light: #f9f9f9;
-            --dark: #16213e;
+            --primary: #1a472a;
+            --secondary: #2e8b57;
+            --accent: #3cb371;
+            --light: #f5f5f5;
+            --dark: #0d2818;
             --text: #333;
-            --text-light: #777;
+            --text-light: #666;
             --gradient: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-            --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, #ff6b8b 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --primary: #2e8b57;
+            --secondary: #3cb371;
+            --accent: #90ee90;
+            --light: #1a1a1a;
+            --dark: #0d2818;
+            --text: #f5f5f5;
+            --text-light: #ccc;
         }
 
         html {
@@ -75,6 +114,7 @@
             color: var(--text);
             background-color: var(--light);
             overflow-x: hidden;
+            transition: var(--transition);
         }
 
         .container {
@@ -135,46 +175,17 @@
             text-decoration: none;
             border-radius: 30px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             border: none;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
         }
 
-        .btn:hover {
-            background-color: #d63447;
+        .btn:hover, .btn:focus {
+            background-color: var(--accent);
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn:focus {
-            outline: 2px solid var(--secondary);
-            outline-offset: 2px;
-        }
-
-        .btn.loading {
-            color: transparent;
-        }
-
-        .btn.loading::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 50%;
-            left: 50%;
-            margin-left: -10px;
-            margin-top: -10px;
-            border: 2px solid #ffffff;
-            border-radius: 50%;
-            border-top-color: transparent;
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
+            outline: none;
         }
 
         .btn-outline {
@@ -184,7 +195,7 @@
             box-shadow: none;
         }
 
-        .btn-outline:hover {
+        .btn-outline:hover, .btn-outline:focus {
             background-color: var(--secondary);
             color: white;
         }
@@ -198,6 +209,12 @@
             top: 0;
             z-index: 1000;
             backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        [data-theme="dark"] header {
+            background-color: rgba(26, 26, 26, 0.95);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
         }
 
         .header-container {
@@ -220,13 +237,17 @@
             width: 40px;
             height: 40px;
             margin-right: 10px;
-            background: var(--gradient);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-weight: bold;
+            overflow: hidden;
+        }
+
+        .logo-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .logo span {
@@ -246,7 +267,7 @@
             text-decoration: none;
             color: var(--text);
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: var(--transition);
             position: relative;
             cursor: pointer;
         }
@@ -259,7 +280,7 @@
             width: 0;
             height: 2px;
             background-color: var(--secondary);
-            transition: width 0.3s ease;
+            transition: var(--transition);
         }
 
         nav ul li a:hover, nav ul li a.active {
@@ -279,22 +300,13 @@
             color: var(--primary);
         }
 
-        /* Skip Link */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: var(--secondary);
-            color: white;
-            padding: 8px 16px;
-            text-decoration: none;
-            z-index: 10000;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
-        .skip-link:focus {
-            top: 6px;
+        .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--primary);
+            margin-left: 20px;
         }
 
         /* Page Content */
@@ -367,14 +379,14 @@
             color: white;
         }
 
-        .hero .btn-outline:hover {
+        .hero .btn-outline:hover, .hero .btn-outline:focus {
             background-color: white;
             color: var(--primary);
         }
 
         /* Services Section */
         .services {
-            background-color: white;
+            background-color: var(--light);
         }
 
         .services-grid {
@@ -384,20 +396,19 @@
         }
 
         .service-card {
-            background-color: white;
+            background-color: var(--light);
             border-radius: 15px;
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
             position: relative;
             overflow: hidden;
-            opacity: 0;
-            transform: translateY(30px);
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
-        .service-card.animate-in {
-            animation: fadeInUp 0.6s ease-out forwards;
+        [data-theme="dark"] .service-card {
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .service-card:before {
@@ -412,7 +423,7 @@
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
         }
 
         .service-icon {
@@ -424,6 +435,10 @@
         /* About Section */
         .about {
             background-color: #f5f7fa;
+        }
+
+        [data-theme="dark"] .about {
+            background-color: #2a2a2a;
         }
 
         .about-content {
@@ -440,7 +455,7 @@
             flex: 1;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
 
         .about-image img {
@@ -451,7 +466,7 @@
 
         /* Portfolio Section */
         .portfolio {
-            background-color: white;
+            background-color: var(--light);
         }
 
         .portfolio-filters {
@@ -464,23 +479,25 @@
 
         .filter-btn {
             padding: 10px 20px;
-            background: white;
+            background: var(--light);
             border: 1px solid #ddd;
             border-radius: 30px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             font-weight: 500;
         }
 
-        .filter-btn:focus {
-            outline: 2px solid var(--secondary);
-            outline-offset: 2px;
+        [data-theme="dark"] .filter-btn {
+            background: #2a2a2a;
+            border-color: #444;
+            color: var(--text);
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active, .filter-btn:hover, .filter-btn:focus {
             background: var(--secondary);
             color: white;
             border-color: var(--secondary);
+            outline: none;
         }
 
         .portfolio-grid {
@@ -496,22 +513,16 @@
             height: 350px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             cursor: pointer;
-            opacity: 0;
-            transform: translateY(30px);
         }
 
-        .portfolio-item.animate-in {
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-
-        .portfolio-item img {
+        .portfolio-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .portfolio-item:hover img {
+        .portfolio-item:hover .portfolio-image {
             transform: scale(1.1);
         }
 
@@ -521,13 +532,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(26, 26, 46, 0.85);
+            background: rgba(26, 71, 42, 0.85);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: var(--transition);
             padding: 20px;
             text-align: center;
             color: white;
@@ -576,7 +587,7 @@
         }
 
         .modal-content {
-            background: white;
+            background: var(--light);
             max-width: 1000px;
             margin: 50px auto;
             border-radius: 15px;
@@ -588,17 +599,6 @@
         @keyframes modalFadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .modal-close {
@@ -616,23 +616,18 @@
             cursor: pointer;
             z-index: 10;
             font-size: 1.2rem;
-            transition: background-color 0.3s ease;
+            border: none;
         }
 
-        .modal-close:hover {
+        .modal-close:hover, .modal-close:focus {
             background: rgba(0, 0, 0, 0.7);
+            outline: none;
         }
 
         .modal-header {
             height: 400px;
             position: relative;
             overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 600;
         }
 
         .modal-body {
@@ -660,6 +655,11 @@
             background: #f9f9f9;
             padding: 25px;
             border-radius: 10px;
+        }
+
+        [data-theme="dark"] .project-info,
+        [data-theme="dark"] .project-results {
+            background: #2a2a2a;
         }
 
         .project-info h3, .project-results h3 {
@@ -700,6 +700,10 @@
             background-color: #f5f7fa;
         }
 
+        [data-theme="dark"] .testimonials {
+            background-color: #2a2a2a;
+        }
+
         .testimonial-slider {
             max-width: 800px;
             margin: 0 auto;
@@ -707,11 +711,16 @@
         }
 
         .testimonial {
-            background-color: white;
+            background-color: var(--light);
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--shadow);
             text-align: center;
+            transition: var(--transition);
+        }
+
+        .testimonial.active {
+            transform: scale(1.02);
         }
 
         .testimonial-text {
@@ -769,9 +778,29 @@
             color: var(--text-light);
         }
 
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .testimonial-dot.active, .testimonial-dot:hover {
+            background: var(--secondary);
+        }
+
         /* Contact Section */
         .contact {
-            background-color: white;
+            background-color: var(--light);
         }
 
         .contact-container {
@@ -810,17 +839,20 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             font-size: 1rem;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            transition: var(--transition);
+            background: var(--light);
+            color: var(--text);
+        }
+
+        [data-theme="dark"] .form-control {
+            border-color: #444;
+            background: #2a2a2a;
         }
 
         .form-control:focus {
             border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1);
+            box-shadow: 0 0 0 3px rgba(60, 179, 113, 0.1);
             outline: none;
-        }
-
-        .form-control.error {
-            border-color: var(--secondary);
         }
 
         textarea.form-control {
@@ -828,25 +860,9 @@
             resize: vertical;
         }
 
-        .error-message {
-            color: var(--secondary);
-            font-size: 0.8rem;
-            margin-top: 5px;
-            display: none;
-        }
-
-        .success-message {
-            background: #d4edda;
-            color: #155724;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            display: none;
-        }
-
         /* Team Section */
         .team {
-            background-color: white;
+            background-color: var(--light);
         }
 
         .team-grid {
@@ -857,17 +873,16 @@
 
         .team-member {
             text-align: center;
-            background: white;
+            background: var(--light);
             border-radius: 15px;
             padding: 30px 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-            opacity: 0;
-            transform: translateY(30px);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
-        .team-member.animate-in {
-            animation: fadeInUp 0.6s ease-out forwards;
+        [data-theme="dark"] .team-member {
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .team-member:hover {
@@ -885,13 +900,194 @@
             justify-content: center;
             color: white;
             font-size: 3rem;
-            overflow: hidden;
         }
 
-        .member-photo img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        /* Blog Section */
+        .blog {
+            background-color: var(--light);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: var(--light);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        [data-theme="dark"] .blog-card {
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            height: 200px;
+            background: var(--gradient);
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-category {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-card h3 a {
+            color: var(--text);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .blog-card h3 a:hover {
+            color: var(--secondary);
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background-color: #f5f7fa;
+        }
+
+        [data-theme="dark"] .pricing {
+            background-color: #2a2a2a;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .pricing-card {
+            background: var(--light);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        [data-theme="dark"] .pricing-card {
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .pricing-card.featured {
+            transform: scale(1.05);
+            border: 2px solid var(--secondary);
+        }
+
+        .pricing-card.featured:before {
+            content: 'Most Popular';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary);
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 20px 0;
+        }
+
+        .price-currency {
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+
+        .features {
+            list-style: none;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .features li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background: var(--gradient);
+            color: white;
+            text-align: center;
+        }
+
+        .newsletter h2 {
+            color: white;
+        }
+
+        .newsletter h2:after {
+            background: white;
+        }
+
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form .form-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .newsletter-form .form-control {
+            flex: 1;
+        }
+
+        .newsletter-disclaimer {
+            font-size: 0.8rem;
+            margin-top: 15px;
+            opacity: 0.8;
         }
 
         /* Map Section */
@@ -901,17 +1097,15 @@
             border-radius: 15px;
             overflow: hidden;
             margin-top: 40px;
-        }
-
-        .map-placeholder {
-            width: 100%;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--text-light);
             font-size: 1.2rem;
-            background: #e9ecef;
+        }
+
+        [data-theme="dark"] .map-container {
+            background: #2a2a2a;
         }
 
         /* Stats Section */
@@ -995,12 +1189,13 @@
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: var(--transition);
             cursor: pointer;
         }
 
-        .footer-links a:hover {
+        .footer-links a:hover, .footer-links a:focus {
             color: white;
+            outline: none;
         }
 
         .social-links {
@@ -1019,12 +1214,13 @@
             border-radius: 50%;
             color: white;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            transition: var(--transition);
         }
 
-        .social-links a:hover {
+        .social-links a:hover, .social-links a:focus {
             background-color: var(--secondary);
             transform: translateY(-3px);
+            outline: none;
         }
 
         .copyright {
@@ -1033,6 +1229,15 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
+        }
+
+        .copyright a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .copyright a:hover {
+            color: white;
         }
 
         /* Page Navigation */
@@ -1046,25 +1251,232 @@
         .page-link {
             display: inline-block;
             padding: 10px 20px;
-            background-color: white;
+            background-color: var(--light);
             color: var(--text);
             text-decoration: none;
             border-radius: 30px;
             font-weight: 500;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             cursor: pointer;
+            border: 1px solid rgba(0,0,0,0.05);
         }
 
-        .page-link:focus {
-            outline: 2px solid var(--secondary);
-            outline-offset: 2px;
+        [data-theme="dark"] .page-link {
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .page-link:hover {
+        .page-link:hover, .page-link:focus {
             background-color: var(--secondary);
             color: white;
             transform: translateY(-3px);
+            outline: none;
+        }
+
+        /* Cookie Consent */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--dark);
+            color: white;
+            padding: 20px;
+            z-index: 10000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .cookie-consent.show {
+            transform: translateY(0);
+        }
+
+        .cookie-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cookie-content p {
+            margin: 0;
+            flex: 1;
+            color: white;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cookie-link {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .cookie-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Live Chat */
+        .live-chat-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .chat-toggle {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: var(--transition);
+        }
+
+        .chat-toggle:hover {
+            transform: scale(1.1);
+            background: var(--accent);
+        }
+
+        .chat-container {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 350px;
+            background: var(--light);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .chat-container.show {
+            display: flex;
+        }
+
+        .chat-header {
+            background: var(--gradient);
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header h3 {
+            margin: 0;
+            color: white;
+        }
+
+        .chat-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .chat-message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 0.9rem;
+        }
+
+        .bot-message {
+            background: #f0f0f0;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+
+        [data-theme="dark"] .bot-message {
+            background: #3a3a3a;
+        }
+
+        .user-message {
+            background: var(--secondary);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #eee;
+            gap: 10px;
+        }
+
+        [data-theme="dark"] .chat-input {
+            border-top-color: #444;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            background: var(--light);
+            color: var(--text);
+        }
+
+        [data-theme="dark"] .chat-input input {
+            border-color: #444;
+            background: #2a2a2a;
+        }
+
+        .chat-send {
+            background: var(--secondary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .chat-send:hover {
+            background: var(--accent);
+        }
+
+        /* Skip to main content for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--secondary);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 10000;
+            transition: top 0.3s;
+            border-radius: 4px;
+        }
+
+        .skip-link:focus {
+            top: 6px;
         }
 
         /* Loading Spinner */
@@ -1072,12 +1484,14 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 2px solid #ffffff;
+            border: 3px solid rgba(255,255,255,.3);
             border-radius: 50%;
-            border-top-color: transparent;
+            border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
-            margin-right: 10px;
-            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
 
         /* Responsive Styles */
@@ -1110,6 +1524,23 @@
                 flex: 1 0 50%;
                 margin-bottom: 30px;
             }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+
+            .cookie-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .chat-container {
+                width: 300px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1122,13 +1553,17 @@
                 top: 80px;
                 left: 0;
                 width: 100%;
-                background-color: white;
+                background-color: var(--light);
                 flex-direction: column;
                 align-items: center;
                 padding: 20px 0;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 transform: translateY(-150%);
                 transition: transform 0.3s ease;
+            }
+
+            [data-theme="dark"] nav ul {
+                background-color: #2a2a2a;
             }
             
             nav ul.active {
@@ -1156,6 +1591,14 @@
             .footer-column {
                 flex: 1 0 100%;
             }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form .form-group {
+                flex-direction: column;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1179,13 +1622,13 @@
                 padding: 25px;
             }
             
-            .portfolio-filters {
-                flex-direction: column;
-                align-items: center;
+            .hero {
+                padding: 150px 0 80px;
             }
-            
-            .filter-btn {
-                width: 80%;
+
+            .chat-container {
+                width: calc(100vw - 40px);
+                right: -10px;
             }
         }
 
@@ -1199,34 +1642,120 @@
             min-height: 48px;
             min-width: 48px;
         }
+
+        /* Focus styles for accessibility */
+        *:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+            .cookie-consent,
+            .live-chat-widget,
+            .theme-toggle,
+            .mobile-menu-btn {
+                display: none !important;
+            }
+        }
     </style>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'FB_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
 </head>
 <body>
-    <!-- Skip to main content -->
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-consent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn">Accept</button>
+                <button id="rejectCookies" class="btn btn-outline">Reject</button>
+                <a href="#privacy-policy" class="cookie-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Chat Widget -->
+    <div id="liveChat" class="live-chat-widget">
+        <button id="chatToggle" class="chat-toggle" aria-label="Open live chat">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Live Chat</h3>
+                <button id="chatClose" class="chat-close" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message bot-message">
+                    <p>Hello! How can we help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message..." aria-label="Type your message">
+                <button id="chatSend" class="chat-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skip to main content for accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo" data-page="home">
-                <div class="logo-img">IM</div>
+            <a href="#home" class="logo" data-page="home" aria-label="Ikinai Media Home">
+                <div class="logo-img">
+                    <img src="https://i.ibb.co/vx3Mx0V1/ikinai-logo.png" alt="Ikinai Media Logo">
+                </div>
                 Ikinai <span>Media</span>
             </a>
-            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active" data-page="home">Home</a></li>
-                    <li><a href="#" data-page="services">Services</a></li>
-                    <li><a href="#" data-page="portfolio">Portfolio</a></li>
-                    <li><a href="#" data-page="about">About</a></li>
-                    <li><a href="#" data-page="contact">Contact</a></li>
+                    <li><a href="#home" class="active" data-page="home">Home</a></li>
+                    <li><a href="#services" data-page="services">Services</a></li>
+                    <li><a href="#portfolio" data-page="portfolio">Portfolio</a></li>
+                    <li><a href="#about" data-page="about">About</a></li>
+                    <li><a href="#blog" data-page="blog">Blog</a></li>
+                    <li><a href="#contact" data-page="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main id="main-content">
         <!-- Home Page -->
         <div id="home" class="page active">
@@ -1236,8 +1765,8 @@
                     <h1>Elevate Your Digital Presence</h1>
                     <p>Ikinai Media is a full-service digital marketing agency that helps brands grow through innovative strategies, compelling design, and data-driven solutions.</p>
                     <div class="hero-btns">
-                        <a href="#" class="btn" data-page="contact">Get Started</a>
-                        <a href="#" class="btn btn-outline" data-page="portfolio">View Our Work</a>
+                        <a href="#contact" class="btn" data-page="contact">Get Started</a>
+                        <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View Our Work</a>
                     </div>
                 </div>
             </section>
@@ -1249,31 +1778,31 @@
                     <div class="services-grid">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-code"></i>
+                                <i class="fas fa-code" aria-hidden="true"></i>
                             </div>
                             <h3>Web Development</h3>
                             <p>Custom websites and web applications built with the latest technologies to deliver exceptional user experiences.</p>
-                            <a href="#" class="btn btn-outline" data-page="services" style="margin-top: 15px;">Learn More</a>
+                            <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-paint-brush"></i>
+                                <i class="fas fa-paint-brush" aria-hidden="true"></i>
                             </div>
                             <h3>Branding & Design</h3>
                             <p>Creative design solutions that capture your brand's essence and communicate your message effectively.</p>
-                            <a href="#" class="btn btn-outline" data-page="services" style="margin-top: 15px;">Learn More</a>
+                            <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
                             </div>
                             <h3>Digital Marketing</h3>
                             <p>Data-driven marketing strategies that increase visibility, engagement, and conversions for your business.</p>
-                            <a href="#" class="btn btn-outline" data-page="services" style="margin-top: 15px;">Learn More</a>
+                            <a href="#services" class="btn btn-outline" data-page="services">Learn More</a>
                         </div>
                     </div>
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="services">View All Services</a>
+                        <a href="#services" class="page-link" data-page="services">View All Services</a>
                     </div>
                 </div>
             </section>
@@ -1308,32 +1837,32 @@
                     <h2>Featured Projects</h2>
                     <div class="portfolio-grid">
                         <div class="portfolio-item">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="E-commerce Platform" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>E-commerce Platform</h3>
                                 <p>Complete online store with custom features</p>
-                                <a href="#" class="btn btn-outline" data-page="portfolio" style="margin-top: 15px;">View Details</a>
+                                <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View Details</a>
                             </div>
                         </div>
                         <div class="portfolio-item">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Corporate Website" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Corporate Website</h3>
                                 <p>Modern design for a financial services company</p>
-                                <a href="#" class="btn btn-outline" data-page="portfolio" style="margin-top: 15px;">View Details</a>
+                                <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View Details</a>
                             </div>
                         </div>
                         <div class="portfolio-item">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mobile Application" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>Mobile Application</h3>
                                 <p>Fitness tracking app with social features</p>
-                                <a href="#" class="btn btn-outline" data-page="portfolio" style="margin-top: 15px;">View Details</a>
+                                <a href="#portfolio" class="btn btn-outline" data-page="portfolio">View Details</a>
                             </div>
                         </div>
                     </div>
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="portfolio">View Full Portfolio</a>
+                        <a href="#portfolio" class="page-link" data-page="portfolio">View Full Portfolio</a>
                     </div>
                 </div>
             </section>
@@ -1343,7 +1872,7 @@
                 <div class="container">
                     <h2>What Our Clients Say</h2>
                     <div class="testimonial-slider">
-                        <div class="testimonial">
+                        <div class="testimonial active">
                             <p class="testimonial-text">Working with Ikinai Media transformed our online presence. Their team delivered a website that not only looks incredible but has significantly increased our conversion rates. Their attention to detail and strategic approach made all the difference.</p>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
@@ -1355,6 +1884,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="testimonial-nav">
+                            <span class="testimonial-dot active" aria-label="View testimonial 1"></span>
+                            <span class="testimonial-dot" aria-label="View testimonial 2"></span>
+                            <span class="testimonial-dot" aria-label="View testimonial 3"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated</h2>
+                        <p>Subscribe to our newsletter for the latest digital marketing insights and tips.</p>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" required aria-required="true">
+                                <button type="submit" class="btn">Subscribe</button>
+                            </div>
+                            <p class="newsletter-disclaimer">By subscribing, you agree to our Privacy Policy</p>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -1374,7 +1925,7 @@
                     <div class="services-grid">
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-code"></i>
+                                <i class="fas fa-code" aria-hidden="true"></i>
                             </div>
                             <h3>Web Development</h3>
                             <p>We create responsive, high-performance websites and web applications using the latest technologies. Our development process focuses on user experience, speed, and scalability.</p>
@@ -1388,7 +1939,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-paint-brush"></i>
+                                <i class="fas fa-paint-brush" aria-hidden="true"></i>
                             </div>
                             <h3>Branding & Design</h3>
                             <p>Our design team creates compelling visual identities that communicate your brand's story and values effectively across all platforms.</p>
@@ -1402,7 +1953,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-chart-line"></i>
+                                <i class="fas fa-chart-line" aria-hidden="true"></i>
                             </div>
                             <h3>Digital Marketing</h3>
                             <p>We develop data-driven marketing strategies that increase visibility, engagement, and conversions for your business across digital channels.</p>
@@ -1416,7 +1967,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <h3>E-commerce Solutions</h3>
                             <p>Complete e-commerce platforms designed to maximize sales and provide seamless shopping experiences for your customers.</p>
@@ -1430,7 +1981,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-search"></i>
+                                <i class="fas fa-search" aria-hidden="true"></i>
                             </div>
                             <h3>SEO Optimization</h3>
                             <p>Improve your search engine rankings and drive organic traffic with our comprehensive SEO strategies tailored to your business goals.</p>
@@ -1444,7 +1995,7 @@
                         </div>
                         <div class="service-card">
                             <div class="service-icon">
-                                <i class="fas fa-video"></i>
+                                <i class="fas fa-video" aria-hidden="true"></i>
                             </div>
                             <h3>Content Creation</h3>
                             <p>Engaging content that tells your brand story and connects with your target audience across all platforms and formats.</p>
@@ -1458,8 +2009,52 @@
                         </div>
                     </div>
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="contact">Get a Quote</a>
-                        <a href="#" class="page-link" data-page="home">Back to Home</a>
+                        <a href="#contact" class="page-link" data-page="contact">Get a Quote</a>
+                        <a href="#home" class="page-link" data-page="home">Back to Home</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section class="pricing">
+                <div class="container">
+                    <h2>Service Packages</h2>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3>Starter</h3>
+                            <div class="price">KSh <span class="price-currency">89,999</span></div>
+                            <ul class="features">
+                                <li>5-page Website</li>
+                                <li>Basic SEO Setup</li>
+                                <li>Contact Form</li>
+                                <li>1 Month Support</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline">Get Started</a>
+                        </div>
+                        <div class="pricing-card featured">
+                            <h3>Professional</h3>
+                            <div class="price">KSh <span class="price-currency">249,999</span></div>
+                            <ul class="features">
+                                <li>10-page Website</li>
+                                <li>Advanced SEO</li>
+                                <li>E-commerce Functionality</li>
+                                <li>3 Months Support</li>
+                                <li>Content Creation</li>
+                            </ul>
+                            <a href="#contact" class="btn">Get Started</a>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>Enterprise</h3>
+                            <div class="price">KSh <span class="price-currency">499,999+</span></div>
+                            <ul class="features">
+                                <li>Custom Web Application</li>
+                                <li>Complete Digital Strategy</li>
+                                <li>Ongoing Marketing</li>
+                                <li>6 Months Support</li>
+                                <li>Dedicated Account Manager</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1487,7 +2082,7 @@
                     <div class="portfolio-grid">
                         <!-- Project 1 -->
                         <div class="portfolio-item" data-category="web ecommerce">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="FashionStore E-commerce" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>FashionStore E-commerce</h3>
                                 <p>Complete online fashion retail platform with advanced product filtering and seamless checkout</p>
@@ -1502,7 +2097,7 @@
 
                         <!-- Project 2 -->
                         <div class="portfolio-item" data-category="web design">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="FinServe Corporate Portal" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>FinServe Corporate Portal</h3>
                                 <p>Modern financial services website with client portal and secure document management</p>
@@ -1517,7 +2112,7 @@
 
                         <!-- Project 3 -->
                         <div class="portfolio-item" data-category="web">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="FitTrack Mobile App" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>FitTrack Mobile App</h3>
                                 <p>Fitness tracking application with social features and personalized workout plans</p>
@@ -1532,7 +2127,7 @@
 
                         <!-- Project 4 -->
                         <div class="portfolio-item" data-category="design">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1100&q=80" alt="TechStart Brand Identity" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>TechStart Brand Identity</h3>
                                 <p>Complete rebranding for a technology startup including logo and marketing materials</p>
@@ -1547,7 +2142,7 @@
 
                         <!-- Project 5 -->
                         <div class="portfolio-item" data-category="marketing">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #d4fc79 0%, #96e6a1 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="StyleVibe Social Campaign" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>StyleVibe Social Campaign</h3>
                                 <p>Social media marketing campaign for fashion brand with influencer collaborations</p>
@@ -1562,7 +2157,7 @@
 
                         <!-- Project 6 -->
                         <div class="portfolio-item" data-category="web ecommerce">
-                            <div style="width:100%;height:100%;background:linear-gradient(45deg, #a6c0fe 0%, #f68084 100%);"></div>
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="GlobalMart E-commerce" class="portfolio-image">
                             <div class="portfolio-overlay">
                                 <h3>GlobalMart E-commerce</h3>
                                 <p>Multi-vendor marketplace with advanced search and international payment options</p>
@@ -1577,19 +2172,19 @@
                     </div>
 
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="contact">Start Your Project</a>
-                        <a href="#" class="page-link" data-page="home">Back to Home</a>
+                        <a href="#contact" class="page-link" data-page="contact">Start Your Project</a>
+                        <a href="#home" class="page-link" data-page="home">Back to Home</a>
                     </div>
                 </div>
             </section>
         </div>
 
         <!-- Portfolio Modal -->
-        <div class="portfolio-modal" id="portfolioModal">
+        <div class="portfolio-modal" id="portfolioModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription">
             <div class="modal-content">
-                <div class="modal-close" id="modalClose" aria-label="Close modal">
-                    <i class="fas fa-times"></i>
-                </div>
+                <button class="modal-close" id="modalClose" aria-label="Close modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
                 <div class="modal-header" id="modalHeader">
                     <!-- Project image will be inserted here -->
                 </div>
@@ -1631,10 +2226,66 @@
                     </div>
                     
                     <div style="margin-top: 30px; text-align: center;">
-                        <a href="#" class="btn" data-page="contact">Start Similar Project</a>
+                        <a href="#contact" class="btn" data-page="contact">Start Similar Project</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Blog Page -->
+        <div id="blog" class="page">
+            <section class="hero" style="padding: 150px 0 80px;">
+                <div class="container hero-content">
+                    <h1>Our Blog</h1>
+                    <p>Latest insights, trends, and tips from the digital marketing world.</p>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="container">
+                    <div class="blog-grid">
+                        <article class="blog-card">
+                            <div class="blog-image" style="background:linear-gradient(45deg, #1a472a 0%, #2e8b57 100%);"></div>
+                            <div class="blog-content">
+                                <span class="blog-category">Web Development</span>
+                                <h3><a href="#">The Future of Responsive Web Design in 2025</a></h3>
+                                <p>Explore the latest trends and technologies shaping responsive web design and how they impact user experience.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">March 15, 2025</span>
+                                    <span class="blog-read-time">5 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image" style="background:linear-gradient(45deg, #2e8b57 0%, #3cb371 100%);"></div>
+                            <div class="blog-content">
+                                <span class="blog-category">Digital Marketing</span>
+                                <h3><a href="#">5 Strategies to Boost Your Social Media Engagement</a></h3>
+                                <p>Learn proven techniques to increase engagement and build a loyal following on social media platforms.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">March 10, 2025</span>
+                                    <span class="blog-read-time">7 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image" style="background:linear-gradient(45deg, #3cb371 0%, #90ee90 100%);"></div>
+                            <div class="blog-content">
+                                <span class="blog-category">SEO</span>
+                                <h3><a href="#">Local SEO: Dominating Your Local Market</a></h3>
+                                <p>Discover how to optimize your online presence for local search and attract more customers in your area.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">March 5, 2025</span>
+                                    <span class="blog-read-time">6 min read</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="page-nav">
+                        <a href="#home" class="page-link" data-page="home">Back to Home</a>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- About Page -->
@@ -1659,9 +2310,7 @@
                             <p>To be the leading digital agency recognized for transforming businesses through cutting-edge technology and creative excellence.</p>
                         </div>
                         <div class="about-image">
-                            <div style="width:100%;height:400px;background:linear-gradient(135deg, #3498db 0%, #2d3e50 100%);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;">
-                                Team Collaboration Image
-                            </div>
+                            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Ikinai Media team collaboration" class="portfolio-image">
                         </div>
                     </div>
                 </div>
@@ -1673,8 +2322,7 @@
                     <div class="team-grid">
                         <div class="team-member">
                             <div class="member-photo">
-                                <!-- Replace with actual image -->
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                             <h3>John Smith</h3>
                             <p>CEO & Founder</p>
@@ -1682,7 +2330,7 @@
                         </div>
                         <div class="team-member">
                             <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                             <h3>Sarah Johnson</h3>
                             <p>Creative Director</p>
@@ -1690,7 +2338,7 @@
                         </div>
                         <div class="team-member">
                             <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                             <h3>Michael Brown</h3>
                             <p>Lead Developer</p>
@@ -1698,7 +2346,7 @@
                         </div>
                         <div class="team-member">
                             <div class="member-photo">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" aria-hidden="true"></i>
                             </div>
                             <h3>Emily Davis</h3>
                             <p>Marketing Strategist</p>
@@ -1706,8 +2354,8 @@
                         </div>
                     </div>
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="contact">Work With Us</a>
-                        <a href="#" class="page-link" data-page="home">Back to Home</a>
+                        <a href="#contact" class="page-link" data-page="contact">Work With Us</a>
+                        <a href="#home" class="page-link" data-page="home">Back to Home</a>
                     </div>
                 </div>
             </section>
@@ -1731,7 +2379,7 @@
                             
                             <div class="contact-item">
                                 <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
@@ -1741,7 +2389,7 @@
                             
                             <div class="contact-item">
                                 <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
                                 </div>
                                 <div>
                                     <h4>Email</h4>
@@ -1751,7 +2399,7 @@
 
                             <div class="contact-item">
                                 <div class="contact-icon">
-                                    <i class="fas fa-clock"></i>
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
                                 </div>
                                 <div>
                                     <h4>Business Hours</h4>
@@ -1761,10 +2409,10 @@
                             </div>
 
                             <div class="social-links">
-                                <a href="https://facebook.com/ikinaimedia" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/ikinaimedia" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="https://instagram.com/ikinaimedia" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="https://linkedin.com/company/ikinaimedia" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         
@@ -1772,18 +2420,16 @@
                             <h2>Send Us a Message</h2>
                             <form id="contactForm">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                    <div class="error-message" id="nameError">Please enter your name</div>
+                                    <input type="text" class="form-control" placeholder="Your Name" required aria-required="true">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
-                                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                                    <input type="email" class="form-control" placeholder="Your Email" required aria-required="true">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Subject">
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control" required>
+                                    <select class="form-control" required aria-required="true">
                                         <option value="" disabled selected>Select Service</option>
                                         <option value="web-development">Web Development</option>
                                         <option value="design">Branding & Design</option>
@@ -1795,33 +2441,19 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message" required></textarea>
-                                    <div class="error-message" id="messageError">Please enter your message</div>
+                                    <textarea class="form-control" placeholder="Your Message" required aria-required="true"></textarea>
                                 </div>
-                                <button type="submit" class="btn" id="submitBtn">
-                                    <span id="btnText">Send Message</span>
-                                </button>
-                                <div class="success-message" id="successMessage">
-                                    Thank you for your message! We will get back to you soon.
-                                </div>
+                                <button type="submit" class="btn">Send Message</button>
                             </form>
                         </div>
                     </div>
 
                     <div class="map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8085999999996!2d36.821189!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNCJTIDM2wrA0OScxNi4zIkU!5e0!3m2!1sen!2ske!4v1234567890"
-                            width="100%" 
-                            height="400" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy"
-                            title="Ikinai Media Location">
-                        </iframe>
+                        <p>Map would be embedded here showing our location</p>
                     </div>
 
                     <div class="page-nav">
-                        <a href="#" class="page-link" data-page="home">Back to Home</a>
+                        <a href="#home" class="page-link" data-page="home">Back to Home</a>
                     </div>
                 </div>
             </section>
@@ -1834,52 +2466,56 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <div class="logo-img">IM</div>
+                        <div class="logo-img">
+                            <img src="https://i.ibb.co/vx3Mx0V1/ikinai-logo.png" alt="Ikinai Media Logo">
+                        </div>
                         Ikinai <span>Media</span>
                     </div>
                     <p>We are a full-service digital agency dedicated to helping businesses thrive in the digital age through innovative solutions and strategic thinking.</p>
                     <div class="social-links">
-                        <a href="https://facebook.com/ikinaimedia" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/ikinaimedia" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/ikinaimedia" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/company/ikinaimedia" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#" data-page="home">Home</a></li>
-                        <li><a href="#" data-page="services">Services</a></li>
-                        <li><a href="#" data-page="portfolio">Portfolio</a></li>
-                        <li><a href="#" data-page="about">About</a></li>
-                        <li><a href="#" data-page="contact">Contact</a></li>
+                        <li><a href="#home" data-page="home">Home</a></li>
+                        <li><a href="#services" data-page="services">Services</a></li>
+                        <li><a href="#portfolio" data-page="portfolio">Portfolio</a></li>
+                        <li><a href="#about" data-page="about">About</a></li>
+                        <li><a href="#blog" data-page="blog">Blog</a></li>
+                        <li><a href="#contact" data-page="contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#" data-page="services">Web Development</a></li>
-                        <li><a href="#" data-page="services">Digital Marketing</a></li>
-                        <li><a href="#" data-page="services">Branding & Design</a></li>
-                        <li><a href="#" data-page="services">E-commerce Solutions</a></li>
-                        <li><a href="#" data-page="services">SEO Optimization</a></li>
+                        <li><a href="#services" data-page="services">Web Development</a></li>
+                        <li><a href="#services" data-page="services">Digital Marketing</a></li>
+                        <li><a href="#services" data-page="services">Branding & Design</a></li>
+                        <li><a href="#services" data-page="services">E-commerce Solutions</a></li>
+                        <li><a href="#services" data-page="services">SEO Optimization</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Info</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-phone"></i> +254 704 107373</li>
-                        <li><i class="fas fa-envelope"></i> ikinaimedia2@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> +254 704 107373</li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> ikinaimedia2@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Nairobi, Kenya</li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Ikinai Media. All Rights Reserved.</p>
+                <p>&copy; 2025 Ikinai Media. All Rights Reserved. | <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
         // Portfolio Data
         const portfolioData = {
@@ -1897,7 +2533,7 @@
                     "Reduced cart abandonment by 30%",
                     "Expanded to international markets successfully"
                 ],
-                gradient: "linear-gradient(45deg, #ff9a9e 0%, #fad0c4 100%)"
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
             },
             2: {
                 title: "FinServe Corporate Portal",
@@ -1913,7 +2549,7 @@
                     "Increased lead generation by 50%",
                     "Enhanced security compliance"
                 ],
-                gradient: "linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%)"
+                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80"
             },
             3: {
                 title: "FitTrack Mobile App",
@@ -1929,7 +2565,7 @@
                     "Increased user retention by 40%",
                     "Generated premium subscription revenue"
                 ],
-                gradient: "linear-gradient(45deg, #ffecd2 0%, #fcb69f 100%)"
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
             },
             4: {
                 title: "TechStart Brand Identity",
@@ -1945,7 +2581,7 @@
                     "Improved marketing effectiveness",
                     "Created cohesive brand experience"
                 ],
-                gradient: "linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%)"
+                image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1100&q=80"
             },
             5: {
                 title: "StyleVibe Social Campaign",
@@ -1961,7 +2597,7 @@
                     "Generated 200+ qualified leads",
                     "Increased online sales by 30%"
                 ],
-                gradient: "linear-gradient(45deg, #d4fc79 0%, #96e6a1 100%)"
+                image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
             },
             6: {
                 title: "GlobalMart E-commerce",
@@ -1977,14 +2613,64 @@
                     "Achieved 99.9% platform uptime",
                     "Expanded to 5 international markets"
                 ],
-                gradient: "linear-gradient(45deg, #a6c0fe 0%, #f68084 100%)"
+                image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
             }
         };
 
-        // Page Navigation System
+        // Testimonials Data
+        const testimonialsData = [
+            {
+                text: "Working with Ikinai Media transformed our online presence. Their team delivered a website that not only looks incredible but has significantly increased our conversion rates. Their attention to detail and strategic approach made all the difference.",
+                author: "Melton Konchella",
+                position: "CEO, Ipate Deliveries and OnPoint Kenya Ltd",
+                initials: "MK"
+            },
+            {
+                text: "The digital marketing campaign Ikinai Media created for us exceeded all expectations. Our brand visibility increased by 200% and we saw a 45% growth in qualified leads within just three months.",
+                author: "Sarah Johnson",
+                position: "Marketing Director, TechSolutions Ltd",
+                initials: "SJ"
+            },
+            {
+                text: "From web development to ongoing support, Ikinai Media has been an invaluable partner. Their team is responsive, professional, and truly understands our business needs.",
+                author: "Michael Brown",
+                position: "Operations Manager, RetailPlus Kenya",
+                initials: "MB"
+            }
+        ];
+
+        // Chat Responses
+        const chatResponses = [
+            "Great! We'd love to help you with that. Could you tell me more about your project?",
+            "I understand. Our team specializes in that area. When were you looking to get started?",
+            "That's an interesting challenge. We've helped many clients with similar needs.",
+            "We offer several solutions for that. Would you like me to schedule a consultation?",
+            "I can connect you with one of our specialists who can provide more detailed information."
+        ];
+
+        // Main application JavaScript
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all components
+            initNavigation();
+            initPortfolio();
+            initTestimonials();
+            initContactForm();
+            initNewsletter();
+            initLiveChat();
+            initCookieConsent();
+            initDarkMode();
+            initPerformanceTracking();
+            
+            console.log('Ikinai Media website initialized successfully');
+        });
+
+        // Navigation System
+        function initNavigation() {
             // Get all page links
             const pageLinks = document.querySelectorAll('[data-page]');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('nav ul');
+            let currentPage = window.location.hash.substring(1) || 'home';
             
             // Function to show a specific page
             function showPage(pageId) {
@@ -1994,21 +2680,30 @@
                 });
                 
                 // Show the selected page
-                document.getElementById(pageId).classList.add('active');
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    targetPage.classList.add('active');
+                } else {
+                    // Fallback to home if page doesn't exist
+                    document.getElementById('home').classList.add('active');
+                    currentPage = 'home';
+                }
                 
-                // Update active navigation link
+                // Update URL hash
+                window.location.hash = currentPage;
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            }
+            
+            // Update active navigation
+            function updateActiveNav(pageId) {
                 document.querySelectorAll('nav a').forEach(link => {
                     link.classList.remove('active');
                     if (link.getAttribute('data-page') === pageId) {
                         link.classList.add('active');
                     }
                 });
-                
-                // Scroll to top
-                window.scrollTo(0, 0);
-                
-                // Trigger animations for newly visible elements
-                setTimeout(initAnimations, 100);
             }
             
             // Add click event listeners to all page links
@@ -2016,14 +2711,47 @@
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     const pageId = this.getAttribute('data-page');
+                    currentPage = pageId;
                     showPage(pageId);
+                    updateActiveNav(pageId);
+                    
+                    // Close mobile menu if open
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    }
                 });
             });
             
-            // Portfolio Filtering
+            // Handle browser back/forward buttons
+            window.addEventListener('hashchange', function() {
+                currentPage = window.location.hash.substring(1) || 'home';
+                showPage(currentPage);
+                updateActiveNav(currentPage);
+            });
+            
+            // Mobile Menu Toggle
+            mobileMenuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+                mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+            });
+            
+            // Initialize with current page
+            showPage(currentPage);
+            updateActiveNav(currentPage);
+        }
+
+        // Portfolio System
+        function initPortfolio() {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const modal = document.getElementById('portfolioModal');
+            const modalClose = document.getElementById('modalClose');
+            const viewProjectButtons = document.querySelectorAll('.view-project');
+            let focusedElementBeforeModal;
             
+            // Portfolio Filtering
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     // Update active filter button
@@ -2032,32 +2760,40 @@
                     
                     const filterValue = this.getAttribute('data-filter');
                     
-                    // Filter portfolio items
+                    // Filter portfolio items with animation
                     portfolioItems.forEach(item => {
                         if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
                             item.style.display = 'block';
-                            // Re-trigger animation
                             setTimeout(() => {
-                                item.classList.add('animate-in');
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
                             }, 50);
                         } else {
-                            item.style.display = 'none';
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
                         }
                     });
                 });
             });
             
-            // Portfolio Modal
-            const modal = document.getElementById('portfolioModal');
-            const modalClose = document.getElementById('modalClose');
-            const viewProjectButtons = document.querySelectorAll('.view-project');
+            // Initialize portfolio items with animation properties
+            portfolioItems.forEach(item => {
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
             
+            // Portfolio Modal
             viewProjectButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const projectId = this.getAttribute('data-project');
                     const projectData = portfolioData[projectId];
                     
                     if (projectData) {
+                        // Store current focus
+                        focusedElementBeforeModal = document.activeElement;
+                        
                         // Populate modal with project data
                         document.getElementById('modalTitle').textContent = projectData.title;
                         document.getElementById('modalDescription').textContent = projectData.description;
@@ -2067,9 +2803,9 @@
                         document.getElementById('modalTechnologies').textContent = projectData.technologies;
                         document.getElementById('modalServices').textContent = projectData.services;
                         
-                        // Set header background
-                        document.getElementById('modalHeader').style.background = projectData.gradient;
-                        document.getElementById('modalHeader').innerHTML = `<h2>${projectData.title}</h2>`;
+                        // Set header background with actual image
+                        const modalHeader = document.getElementById('modalHeader');
+                        modalHeader.style.background = `url('${projectData.image}') center/cover no-repeat`;
                         
                         // Populate results
                         const resultsList = document.getElementById('modalResults');
@@ -2083,168 +2819,376 @@
                         // Show modal
                         modal.style.display = 'block';
                         document.body.style.overflow = 'hidden';
+                        
+                        // Set focus to modal
+                        modal.setAttribute('aria-hidden', 'false');
+                        modalClose.focus();
+                        
+                        // Trap focus inside modal
+                        trapFocus(modal);
                     }
                 });
             });
             
             // Close modal
             modalClose.addEventListener('click', function() {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            });
-            
-            // Close modal when clicking outside
-            window.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
+                closeModal();
             });
             
             // Close modal with Escape key
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape' && modal.style.display === 'block') {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
+                    closeModal();
                 }
             });
             
-            // Mobile Menu Toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const navMenu = document.querySelector('nav ul');
-            
-            mobileMenuBtn.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                // Update aria-expanded attribute
-                const isExpanded = navMenu.classList.contains('active');
-                mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
             });
             
-            // Close mobile menu when clicking on a link
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    navMenu.classList.remove('active');
-                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                modal.setAttribute('aria-hidden', 'true');
+                
+                // Return focus to element that opened the modal
+                if (focusedElementBeforeModal) {
+                    focusedElementBeforeModal.focus();
+                }
+            }
+            
+            // Focus trap for modal
+            function trapFocus(element) {
+                const focusableElements = element.querySelectorAll(
+                    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+                );
+                const firstFocusableElement = focusableElements[0];
+                const lastFocusableElement = focusableElements[focusableElements.length - 1];
+                
+                element.addEventListener('keydown', function(e) {
+                    if (e.key === 'Tab') {
+                        if (e.shiftKey) {
+                            if (document.activeElement === firstFocusableElement) {
+                                e.preventDefault();
+                                lastFocusableElement.focus();
+                            }
+                        } else {
+                            if (document.activeElement === lastFocusableElement) {
+                                e.preventDefault();
+                                firstFocusableElement.focus();
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Testimonials System
+        function initTestimonials() {
+            const testimonialDots = document.querySelectorAll('.testimonial-dot');
+            const testimonials = document.querySelectorAll('.testimonial');
+            let currentTestimonial = 0;
+            
+            // Initialize testimonials
+            testimonials.forEach((testimonial, index) => {
+                if (index > 0) {
+                    testimonial.style.display = 'none';
+                }
+            });
+            
+            // Add click events to dots
+            testimonialDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showTestimonial(index);
                 });
             });
             
-            // Form submission with validation
-            const contactForm = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const btnText = document.getElementById('btnText');
-            const successMessage = document.getElementById('successMessage');
+            function showTestimonial(index) {
+                // Hide all testimonials
+                testimonials.forEach(testimonial => {
+                    testimonial.style.display = 'none';
+                    testimonial.classList.remove('active');
+                });
+                
+                // Remove active class from all dots
+                testimonialDots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+                
+                // Show selected testimonial
+                testimonials[index].style.display = 'block';
+                setTimeout(() => {
+                    testimonials[index].classList.add('active');
+                }, 50);
+                
+                // Activate corresponding dot
+                testimonialDots[index].classList.add('active');
+                
+                currentTestimonial = index;
+            }
             
+            // Auto-advance testimonials
+            setInterval(() => {
+                let nextTestimonial = currentTestimonial + 1;
+                if (nextTestimonial >= testimonials.length) {
+                    nextTestimonial = 0;
+                }
+                showTestimonial(nextTestimonial);
+            }, 5000);
+        }
+
+        // Contact Form System
+        function initContactForm() {
+            const contactForm = document.getElementById('contactForm');
             if (contactForm) {
                 contactForm.addEventListener('submit', function(e) {
                     e.preventDefault();
                     
-                    // Reset error states
-                    document.querySelectorAll('.error-message').forEach(error => {
-                        error.style.display = 'none';
-                    });
-                    document.querySelectorAll('.form-control').forEach(input => {
-                        input.classList.remove('error');
-                    });
-                    
-                    // Get form values
-                    const name = this.querySelector('input[type="text"]').value.trim();
-                    const email = this.querySelector('input[type="email"]').value.trim();
-                    const message = this.querySelector('textarea').value.trim();
-                    
-                    let isValid = true;
-                    
-                    // Validate name
-                    if (!name) {
-                        document.getElementById('nameError').style.display = 'block';
-                        this.querySelector('input[type="text"]').classList.add('error');
-                        isValid = false;
-                    }
-                    
-                    // Validate email
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!email || !emailRegex.test(email)) {
-                        document.getElementById('emailError').style.display = 'block';
-                        this.querySelector('input[type="email"]').classList.add('error');
-                        isValid = false;
-                    }
-                    
-                    // Validate message
-                    if (!message) {
-                        document.getElementById('messageError').style.display = 'block';
-                        this.querySelector('textarea').classList.add('error');
-                        isValid = false;
-                    }
-                    
-                    if (!isValid) return;
-                    
                     // Show loading state
-                    submitBtn.classList.add('loading');
-                    btnText.textContent = 'Sending...';
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<div class="loading-spinner"></div> Sending...';
+                    submitBtn.disabled = true;
                     
-                    // Simulate form submission (replace with actual AJAX call)
+                    // Simulate form submission
                     setTimeout(() => {
-                        // Hide loading state
-                        submitBtn.classList.remove('loading');
-                        btnText.textContent = 'Send Message';
-                        
-                        // Show success message
-                        successMessage.style.display = 'block';
-                        
-                        // Reset form
+                        alert('Thank you for your message! We will get back to you soon.');
                         this.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
                         
-                        // Hide success message after 5 seconds
-                        setTimeout(() => {
-                            successMessage.style.display = 'none';
-                        }, 5000);
+                        // Track form submission
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'form_submission', {
+                                'event_category': 'Contact',
+                                'event_label': 'Contact Form'
+                            });
+                        }
                     }, 2000);
                 });
             }
-            
-            // Animation on scroll
-            function initAnimations() {
-                const animatedElements = document.querySelectorAll('.service-card, .portfolio-item, .team-member');
-                
-                const observerOptions = {
-                    threshold: 0.1,
-                    rootMargin: '0px 0px -50px 0px'
-                };
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('animate-in');
-                            observer.unobserve(entry.target);
+        }
+
+        // Newsletter System
+        function initNewsletter() {
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // Show loading state
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<div class="loading-spinner"></div> Subscribing...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate API call
+                    setTimeout(() => {
+                        alert('Thank you for subscribing to our newsletter!');
+                        this.reset();
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Track newsletter signup
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'newsletter_signup', {
+                                'event_category': 'Subscription',
+                                'event_label': 'Newsletter'
+                            });
                         }
-                    });
-                }, observerOptions);
-                
-                animatedElements.forEach(el => {
-                    observer.observe(el);
+                    }, 1500);
                 });
             }
+        }
+
+        // Live Chat System
+        function initLiveChat() {
+            const chatToggle = document.getElementById('chatToggle');
+            const chatClose = document.getElementById('chatClose');
+            const chatContainer = document.querySelector('.chat-container');
+            const chatInput = document.getElementById('chatInput');
+            const chatSend = document.getElementById('chatSend');
+            const chatMessages = document.getElementById('chatMessages');
             
-            // Initialize animations on page load
-            initAnimations();
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
+            chatToggle.addEventListener('click', () => {
+                chatContainer.classList.toggle('show');
+                chatToggle.setAttribute('aria-expanded', 
+                    chatContainer.classList.contains('show'));
+                
+                if (chatContainer.classList.contains('show')) {
+                    chatInput.focus();
+                }
             });
             
-            // Touch-friendly improvements
-            document.addEventListener('touchstart', function() {}, {passive: true});
-        });
+            chatClose.addEventListener('click', () => {
+                chatContainer.classList.remove('show');
+                chatToggle.setAttribute('aria-expanded', 'false');
+            });
+            
+            chatSend.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    // Add user message
+                    addMessage(message, 'user');
+                    chatInput.value = '';
+                    
+                    // Simulate bot response
+                    setTimeout(() => {
+                        const randomResponse = chatResponses[Math.floor(Math.random() * chatResponses.length)];
+                        addMessage(randomResponse, 'bot');
+                    }, 1000);
+                }
+            }
+            
+            function addMessage(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `chat-message ${sender}-message`;
+                messageDiv.innerHTML = `<p>${text}</p>`;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+        }
+
+        // Cookie Consent System
+        function initCookieConsent() {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const rejectCookies = document.getElementById('rejectCookies');
+            
+            // Check if user has already made a choice
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    cookieConsent.classList.add('show');
+                }, 1000);
+            }
+            
+            acceptCookies.addEventListener('click', () => {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieConsent.classList.remove('show');
+                
+                // Enable analytics (in a real implementation)
+                console.log('Cookies accepted - analytics enabled');
+            });
+            
+            rejectCookies.addEventListener('click', () => {
+                localStorage.setItem('cookiesAccepted', 'false');
+                cookieConsent.classList.remove('show');
+                
+                // Disable analytics (in a real implementation)
+                console.log('Cookies rejected - analytics disabled');
+            });
+        }
+
+        // Dark Mode System
+        function initDarkMode() {
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = themeToggle.querySelector('i');
+            
+            // Check for saved theme preference or respect OS preference
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+            }
+            
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                if (currentTheme === 'dark') {
+                    document.documentElement.removeAttribute('data-theme');
+                    themeIcon.className = 'fas fa-moon';
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    themeIcon.className = 'fas fa-sun';
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        }
+
+        // Performance Tracking
+        function initPerformanceTracking() {
+            // Track page load time
+            window.addEventListener('load', () => {
+                const loadTime = performance.timing.loadEventEnd - performance.timing.navigationStart;
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'timing_complete', {
+                        'name': 'load',
+                        'value': loadTime,
+                        'event_category': 'Performance'
+                    });
+                }
+            });
+            
+            // Track largest contentful paint
+            new PerformanceObserver((entryList) => {
+                const entries = entryList.getEntries();
+                const lastEntry = entries[entries.length - 1];
+                const lcp = lastEntry.renderTime || lastEntry.loadTime;
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'timing_complete', {
+                        'name': 'LCP',
+                        'value': lcp,
+                        'event_category': 'Performance'
+                    });
+                }
+            }).observe({type: 'largest-contentful-paint', buffered: true});
+            
+            // Track first input delay
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    const fid = entry.processingStart - entry.startTime;
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'timing_complete', {
+                            'name': 'FID',
+                            'value': fid,
+                            'event_category': 'Performance'
+                        });
+                    }
+                }
+            }).observe({type: 'first-input', buffered: true});
+        }
+
+        // Utility function to handle image lazy loading
+        function initLazyLoading() {
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        }
+
+        // Initialize lazy loading when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initLazyLoading);
+        } else {
+            initLazyLoading();
+        }
     </script>
 </body>
 </html>
